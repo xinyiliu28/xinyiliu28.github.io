@@ -12,7 +12,7 @@ body {
     font-family: 'Futura', 'Roboto', sans-serif; /* Roboto is a good alternative to Futura */
     line-height: 1.6;
     background-color: #d0efff; /* Baby blue background */
-    color: #333;
+    color: #fff; /* White text for contrast */
     padding: 20px;
     text-align: center; /* Center text */
 }
@@ -40,7 +40,7 @@ header li {
 }
 
 header li:hover {
-    background: rgba(255, 255, 255, 0.2); /* Slight white shade for hover */
+    background: rgba(0, 0, 0, 0.2); /* Dark shade for hover */
 }
 
 /* Style the main content area */
@@ -69,7 +69,7 @@ ul {
 
 li::before {
     content: '•';
-    color: #333;
+    color: #d0efff; /* Baby blue for bullet points */
     font-weight: bold;
     display: inline-block; 
     width: 1em;
