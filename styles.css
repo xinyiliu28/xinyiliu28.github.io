@@ -99,3 +99,18 @@ footer {
         padding: 5px;
     }
 }
+.posts {
+    .post-preview {
+      margin-bottom: 2em;
+      h2 {
+        margin-bottom: 0.5em;
+      }
+      .date {
+        color: #888;
+        font-size: 0.9em;
+      }
+      .summary {
+        margin-bottom: 1em;
+      }
+    }
+  }
