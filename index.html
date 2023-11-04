@@ -52,17 +52,20 @@
         </section>
 
         <section id="blog">
-          <h2>Blog</h2>
-          <article id="latest-post">
-              <h3>Latest Post Title</h3>
-              <p>Date: [Date of Post]</p>
-              <p>Here's a brief overview of my latest post. You can read more about it by clicking on the link below.</p>
-              <!-- Link to full blog post -->
-              <a href="blog.html">Read more...</a>
-          </article>
-          <!-- You can add more blog post previews here -->
-        </section>
-
+            <h2>Blog</h2>
+            <!-- Loop through posts and display them -->
+            {% for post in site.posts limit:5 %}
+            <article class="post-preview">
+              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+              <p class="post-meta">Date: {{ post.date | date: "%b %-d, %Y" }}</p>
+              <p>{{ post.excerpt }}</p>
+              <a href="{{ post.url }}">Read more...</a>
+            </article>
+            {% endfor %}
+            <!-- Link to the blog archive -->
+            <a href="/blog">View all posts...</a>
+          </section>
+          
         <section id="contact">
             <h2>Contact</h2>
             <p>If you'd like to get in touch, feel free to email me at [Your Email] or connect with me on LinkedIn.</p>
@@ -71,7 +74,7 @@
     </div>
 
     <footer>
-        <p>Copyright © [Your Name] [Year]. All rights reserved.</p>
+        <p>Copyright © Xinyi Liu. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
