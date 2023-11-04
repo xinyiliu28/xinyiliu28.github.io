@@ -47,7 +47,7 @@ header li:hover {
 .main-content {
     max-width: 800px; /* Set a max-width for the content */
     margin: auto; /* Center the content */
-    background: rgba(255, 255, 255, 0.85); /* White with transparency */
+    background: rgba(0, 0, 0, 0.7); /* Transparent black */
     padding: 20px;
     border-radius: 10px; /* Rounded corners */
 }
