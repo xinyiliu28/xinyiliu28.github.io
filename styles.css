@@ -1,3 +1,6 @@
+/* Import the alternative font from Google Fonts if Futura is not available */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Reset some basic elements */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -6,23 +9,23 @@ body, h1, h2, h3, p, ul, li {
 
 /* Apply a font to the whole page */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Futura', 'Roboto', sans-serif; /* Roboto is a good alternative to Futura */
     line-height: 1.6;
-    background-color: #000; /* Set background to black */
-    color: #fff; /* Set text to white for contrast */
+    background-color: #d0efff; /* Baby blue background */
+    color: #333;
     padding: 20px;
+    text-align: center; /* Center text */
 }
 
 /* Style the header */
 header {
-    background: #1a1a1a; /* A slightly lighter black for the header */
-    color: #fff;
+    background: #d0efff; /* Baby blue for the header as well */
+    color: #333;
     padding: 10px 0;
-    text-align: center;
 }
 
 header a {
-    color: #d0efff; /* Baby blue for links */
+    color: #333;
     text-decoration: none;
     padding: 0 15px;
 }
@@ -37,22 +40,25 @@ header li {
 }
 
 header li:hover {
-    background: #333; /* Dark grey for hover */
+    background: rgba(255, 255, 255, 0.2); /* Slight white shade for hover */
+}
+
+/* Style the main content area */
+.main-content {
+    max-width: 800px; /* Set a max-width for the content */
+    margin: auto; /* Center the content */
+    background: rgba(255, 255, 255, 0.85); /* White with transparency */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
 }
 
 /* Style the main sections */
 section {
     margin-bottom: 20px;
-    padding: 20px;
-    background: #333; /* Dark grey background for sections */
-    border: 1px solid #444; /* Slightly lighter border for some depth */
 }
 
 /* Style the project entries */
 .project {
-    background-color: #1a1a1a; /* A slightly lighter black for project cards */
-    border: 1px solid #444; /* Slightly lighter border for depth */
-    padding: 15px;
     margin-bottom: 15px;
 }
 
@@ -63,24 +69,17 @@ ul {
 
 li::before {
     content: '•';
-    color: #d0efff; /* Baby blue for bullet points */
+    color: #333;
     font-weight: bold;
     display: inline-block; 
     width: 1em;
     margin-left: -1em;
 }
 
-/* Style the contact section */
-#contact {
-    background-color: #1a1a1a;
-    color: #fff;
-}
-
 /* Footer styles */
 footer {
-    background: #1a1a1a;
-    color: #fff;
-    text-align: center;
+    background: #d0efff; /* Baby blue for the footer as well */
+    color: #333;
     padding: 10px 0;
 }
 
