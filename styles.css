@@ -1,116 +1,40 @@
-/* Import the alternative font from Google Fonts if Futura is not available */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* Reset some basic elements */
-body, h1, h2, h3, p, ul, li {
+body {
+    font-family: 'Futura', sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header, nav, section, footer {
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
 }
 
-/* Apply a font to the whole page */
-body {
-    font-family: 'Futura', 'Roboto', sans-serif; /* Roboto is a good alternative to Futura */
-    line-height: 1.6;
-    background-color: #d0efff; /* Baby blue background */
-    color: #fff; /* White text for contrast */
-    padding: 20px;
-    text-align: center; /* Center text */
-}
-
-/* Style the header */
-header {
-    background: #d0efff; /* Baby blue for the header as well */
-    color: #333;
-    padding: 10px 0;
-}
-
-header a {
-    color: #333;
-    text-decoration: none;
-    padding: 0 15px;
-}
-
-header ul {
-    list-style: none;
-}
-
-header li {
+nav ul li {
     display: inline;
-    padding: 0 20px;
+    margin-right: 10px;
 }
 
-header li:hover {
-    background: rgba(0, 0, 0, 0.2); /* Dark shade for hover */
-}
-
-/* Style the main content area */
-.main-content {
-    max-width: 800px; /* Set a max-width for the content */
-    margin: auto; /* Center the content */
-    background: rgba(0, 0, 0, 0.7); /* Transparent black */
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-}
-
-/* Style the main sections */
-section {
-    margin-bottom: 20px;
-}
-
-/* Style the project entries */
-.project {
-    margin-bottom: 15px;
-}
-
-/* Style the skills list */
-ul {
-    list-style: none;
-}
-
-li::before {
-    content: '•';
-    color: #d0efff; /* Baby blue for bullet points */
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-}
-
-/* Footer styles */
-footer {
-    background: #d0efff; /* Baby blue for the footer as well */
+nav ul li a {
+    text-decoration: none;
     color: #333;
-    padding: 10px 0;
 }
 
-/* Add some responsiveness */
-@media (max-width: 768px) {
-    header nav ul, header nav ul li {
-        float: none;
-        text-align: center;
-    }
-
-    header nav ul {
-        padding: 0;
-    }
-
-    header nav ul li {
-        display: block;
-        padding: 5px;
-    }
+a:hover {
+    color: #555;
 }
-.posts {
-    .post-preview {
-      margin-bottom: 2em;
-      h2 {
-        margin-bottom: 0.5em;
-      }
-      .date {
-        color: #888;
-        font-size: 0.9em;
-      }
-      .summary {
-        margin-bottom: 1em;
-      }
-    }
-  }
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
