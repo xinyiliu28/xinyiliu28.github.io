@@ -1,37 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xinyi Liu</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xinyi Liu | Computational Linguistics</title>
+  <meta name="description" content="Xinyi Liu — graduate student in Computational Linguistics at the University of Washington. Research interests: computational psycholinguistics, and responsible NLP." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="profile-header">
-            <img src="profile_photo.jpeg" alt="Xinyi Liu" class="profile-pic">
-            <div>
-                <header>
-                    <h1>Hi, my name is Xinyi Liu</h1>
-                </header>
-                <nav>
-                    <ul>
-                        <li><a href="cv.pdf" target="_blank">CV</a></li>
-                        <li><a href="resume.pdf" target="_blank">Resume</a></li>
-                        <li><a href="https://github.com/xinyiliu28" target="_blank">GitHub Projects</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm currently a graduate student at the University of Washington, pursuing a master's degree in Computational Linguistics. 
-                I hold dual bachelor's degrees from the University of Rochester, one in Psychology (BA) and another in Data Science (BS). 
-                I am passionate about leveraging my research to contribute towards creating a more equitable world. </p>
-        </section>
-        <footer>
-            <p>Contact me: xinyi dot liu at rochester dot edu | xliu118 at uw dot edu</a></p>
-        </footer>
+  <main class="wrap">
+    <!-- Identity / Hero -->
+    <header class="hero">
+    <div class="photo-block">
+    <img src="profile.jpg" alt="Xinyi Liu protrait" class="profile-pic" loading="lazy" />
+    <div class="photo-caption">Xinyi Liu(up) and Squash</div>
     </div>
+      <div>
+        <h1 class="name">
+        Xinyi Liu 
+        <span class="cname">(刘鑫怡)</span>
+        <span class="pronouns">(she/her)</span>
+        </h1>
+        <p class="roles">Master student at University of Washington</p>
+        <nav aria-label="Quick links" class="links">
+          <a href="resume_Xinyi_Liu.pdf" target="_blank" rel="noopener">CV</a>
+          <!-- Replace # with your actual links as you like -->
+          <a href="https://github.com/xinyiliu28" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:xliu118@uw.edu">Email</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I’m a graduate student at the University of Washington (UW), studying Computational Linguistics. I previously earned dual bachelor’s degrees in Psychology (BA) and Data Science (BS) from the University of Rochester. My research focuses on building and evaluating NLP systems that are reliable, interpretable, and socially responsible. Outside of research, I enjoy live music, films, and time with my cat.
+      </p>
+      <ul class="bullets">
+        <li>Quality and bias in <strong>claim verification</strong> corpora and evaluation</li>
+        <li><strong>Computational psycholinguistics</strong> &amp; human–LM interaction</li>
+        <li><strong>Value Sensitive Design</strong> for AI therapy chatbots</li>
+      </ul>
+    </section>
+
+    <!-- News -->
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <!-- Keep ~5–8 items; newest first. Add or remove as you wish. -->
+        <li><span class="date">Oct 2025</span> Working on corpus study of real vs. synthetic claims.</li>
+        <li><span class="date">Sept 2025</span> Our claim verification survey accepted to EMNLP 2025 Findings. <!-- add link if public --></li>
+        <li><span class="date">Dec 2024</span> Co-authored study on perceptions of very low nicotine content (JMIR). <!-- add link --></li>
+      </ul>
+    </section>
+<!-- Publications -->
+<section id="publications">
+  <h2>Publications</h2>
+
+  <h3>Peer-reviewed</h3>
+  <ul class="pubs">
+    <li>
+      <a class="title" href="https://formative.jmir.org/2024/1/e63035" target="_blank" rel="noopener">
+        Public Perceptions of Very Low Nicotine Content on Twitter
+      </a>
+      — <span class="venue">JMIR</span>, 2024.
+      <span class="authors">Zidian Xie; Xinyi Liu; Xubin Lou; Dongmei Li</span>
+    </li>
+
+    <li>
+      <a class="title" href="https://openreview.net/forum?id=AbVwQw3e3y#discussion" target="_blank" rel="noopener">
+        A Systematic Survey of Claim Verification: Corpora, Systems, and Case Studies
+      </a>
+      — <span class="venue">EMNLP 2025 Findings</span>, 2025.
+      <span class="authors">Zhaxi Zerong, Chenxi Li, Xinyi Liu, Ju-hui Chen, Fei Xia</span>
+    </li>
+  </ul>
+
+  <h3>Preprints &amp; Selected</h3>
+
+</section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        <strong>Email</strong>:
+        xliu118<span aria-hidden="true"> [at] </span>uw<span aria-hidden="true"> [dot] </span>edu
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>Last updated Nov 2025.</p>
+    </footer>
+  </main>
 </body>
 </html>
