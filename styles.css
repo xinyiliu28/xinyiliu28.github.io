@@ -1,13 +1,15 @@
 :root{
   --text:#111;
   --muted:#555;
-  --link:#0a58ca;
+  --link:darkcyan;
   --bg:#fff;
   --border:#eee;
   --maxw:760px;
 }
 
 *{box-sizing:border-box}
+
+
 
 html,body{
   margin:0;
@@ -29,8 +31,13 @@ h1,h2,h3{
 }
 
 h1.name{font-size:2rem; font-weight:700;}
-h2{font-size:1.25rem; margin-top:28px;}
+h2{font-size:1.25rem; margin-top:28px;color:darkcyan;}
 h3{font-size:1rem; color:var(--muted); margin-top:18px;}
+
+strong {
+  font-weight: 600;
+  color: darkcyan;  /* muted indigo / scholarly tone */
+}
 
 p{margin:0 0 12px;}
 a{color:var(--link); text-decoration:none;}
