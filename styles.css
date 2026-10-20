@@ -129,3 +129,21 @@ a:hover{text-decoration:underline;}
   .profile-pic{width:72px; height:72px;}
   .links{gap:10px;}
 }
+
+/* Research interests */
+.research-interests{
+  list-style:none;
+  padding:0;
+  border-left:2px solid var(--link);
+}
+.research-interests li{
+  margin:0;
+  padding:8px 0 8px 14px;
+}
+.research-interests strong,
+.research-interests span{display:block;}
+.research-interests span{
+  color:var(--muted);
+  font-size:0.95rem;
+  margin-top:2px;
+}
